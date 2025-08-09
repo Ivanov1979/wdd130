@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Home – White Water Rafting Co.</title>
+  <meta name="description" content="Guided white water adventures with certified guides. Book trips, join our newsletter, and explore our most popular runs.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" aria-label="Home">
+      <img class="logo" src="images/logo.jpg" alt="White Water Rafting Co. logo" width="120" height="120">
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <img class="hero-img" src="images/hero.jpg" alt="Raft slicing through a whitewater wave" width="1600" height="600">
+      <div class="hero-overlay">
+        <h1>Make Your Next Memory on the River</h1>
+        <a class="btn btn-primary" href="trips.html">View Trips</a>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+      <h2>Join Our Newsletter</h2>
+      <form class="newsletter-form" action="#" method="post" novalidate>
+        <div class="form-field">
+          <label for="nl-name">Full name</label>
+          <input id="nl-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="form-field">
+          <label for="nl-email">Email</label>
+          <input id="nl-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <button class="btn" type="submit">Sign Me Up</button>
+      </form>
+    </section>
+
+    <!-- GRID CONTENT: PURPOSE & OFFERINGS -->
+    <section class="offers">
+      <h2>Why Paddle With Us</h2>
+      <div class="grid-2">
+        <article class="card">
+          <img src="images/rafting4_600.jpg" alt="Team paddling in sync" width="600" height="400" loading="lazy">
+          <h3>Certified Guides</h3>
+          <p>Swiftwater Rescue certified leaders focused on your safety and fun.</p>
+        </article>
+        <article class="card">
+          <img src="images/rafting26_600.jpg" alt="Raft cresting a rapid" width="600" height="400" loading="lazy">
+          <h3>Trips for Everyone</h3>
+          <p>From family-friendly floats to adrenaline Class IV runs—choose your adventure.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> White Water Rafting Co.</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
