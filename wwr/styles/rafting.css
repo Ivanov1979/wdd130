@@ -48,27 +48,12 @@ main {
   padding: 20px;
 }
 
-/* Guides section */
-.guides {
-  display: grid;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.guides img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
 /* Trip images same size */
 .trip-card img,
 .grid-item img,
 article img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: auto;
   border-radius: 5px;
 }
 
@@ -86,7 +71,14 @@ footer img {
   margin: 0 5px;
 }
 
-
-
+/* --- FIX: Make About page guide images same size --- */
+main img[src*="john"],
+main img[src*="sarah"],
+main img[src*="alex"] {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
 
 
