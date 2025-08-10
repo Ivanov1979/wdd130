@@ -1,5 +1,9 @@
 /* Reset */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* Body */
 body {
@@ -12,49 +16,78 @@ body {
 /* Header */
 header {
   background: #004d66;
-  color: #fff;
+  color: white;
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header .logo { height: 60px; }
-header nav a { color: #fff; text-decoration: none; margin: 0 10px; }
-header nav a.active { text-decoration: underline; }
 
-/* Hero */
-.hero-img { width: 100%; display: block; }
+header .logo {
+  height: 60px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+header nav a.active {
+  text-decoration: underline;
+}
+
+/* Hero image */
+.hero-img {
+  width: 100%;
+  display: block;
+}
 
 /* Main */
-main { padding: 20px; }
+main {
+  padding: 20px;
+}
 
-/* ---- Guides (About page) ---- */
-/* Make all images in main 250x250 by default (covers John/Sarah/Alex) */
-main img {
+/* Guide images — target all images inside main > section */
+main section img {
   width: 250px;
   height: 250px;
   object-fit: cover;
   border-radius: 8px;
 }
 
-/* ---- Trips (Trips page) ---- */
-/* Only trip thumbnails (your files named rafting*.jpg) become 200px tall */
-main img[src*="rafting"] {
+/* Trip images same size */
+.trip-card img,
+.grid-item img,
+article img {
   width: 100%;
   height: 200px;
+  object-fit: cover;
   border-radius: 5px;
 }
 
 /* Footer */
 footer {
   background: #004d66;
-  color: #fff;
+  color: white;
   text-align: center;
   padding: 10px;
   margin-top: 20px;
 }
-footer img { width: 24px; margin: 0 5px; }
 
+footer img {
+  width: 24px;
+  margin: 0 5px;
+}
+/* Force same size for John, Sarah, and Alex images */
+main img[src*="john"],
+main img[src*="sarah"],
+main img[src*="alex"] {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
 
 
 
