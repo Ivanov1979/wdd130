@@ -79,15 +79,7 @@ footer img {
   width: 24px;
   margin: 0 5px;
 }
-/* Force same size for John, Sarah, and Alex images */
-main img[src*="john"],
-main img[src*="sarah"],
-main img[src*="alex"] {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 8px;
-}
+
 
 
 
