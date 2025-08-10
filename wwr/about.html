@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="About White Water Rafting Co. - Our story, mission, and team" />
-  <meta name="author" content="Iván Sanhueza" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn more about our rafting company, our mission, and our dedicated team of professional guides.">
+  <meta name="author" content="Iván Sanhueza">
   <title>About Us - White Water Rafting Co.</title>
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles/rafting.css" />
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
   <header>
-    <img src="images/logo.jpg" alt="White Water Rafting Logo" class="logo" />
+    <img src="images/logo.jpg" alt="White Water Rafting Logo" class="logo">
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -28,83 +28,53 @@
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <img class="hero-img" src="images/rafting4_600.jpg" alt="Rafting team paddling" />
-    <div class="hero-overlay">
-      <h2>About Our Company</h2>
-    </div>
-  </section>
+  <main>
+    <section class="company-info">
+      <h1>About Our Company</h1>
+      <p>At White Water Rafting Co., we’ve been guiding thrilling river adventures for more than 15 years. Our mission is simple: to create unforgettable outdoor experiences while ensuring safety, respecting nature, and building lasting memories for every guest.</p>
+      <p>From gentle family-friendly floats to adrenaline-pumping Class V rapids, we offer something for everyone. Our team is committed to excellence in training, customer service, and environmental stewardship.</p>
+    </section>
 
-  <!-- Main Content -->
-  <main class="grid-content">
-    <h2>Our Story</h2>
-    <p>
-      Founded in 1998, White Water Rafting Co. has been providing unforgettable
-      adventures on some of the most scenic and challenging rivers in the
-      country. Our mission is to deliver safe, thrilling, and eco-friendly rafting
-      experiences for people of all ages.
-    </p>
+    <section class="guides">
+      <h2>Meet Our Guides</h2>
 
-    <h2>Our Mission</h2>
-    <p>
-      We believe in connecting people with nature, building teamwork, and creating
-      lifelong memories. Our experienced guides are trained in safety, rescue, and
-      environmental stewardship.
-    </p>
+      <div class="guide">
+        <h3>John</h3>
+        <picture>
+          <source srcset="images/john.avif" type="image/avif">
+          <img src="images/john.avif" alt="Guide John">
+        </picture>
+        <p>John has over 10 years of guiding experience and a deep love for whitewater challenges. Known for his calm demeanor and expert navigation skills, he makes every guest feel safe while having the time of their life.</p>
+      </div>
 
-    <h2>Meet the Team</h2>
-    <div class="grid-layout">
-      <article class="grid-item">
-        <img src="images/guide1.jpg" alt="Guide John" />
-        <h3>John Smith</h3>
-        <p>Lead Guide with 15 years of rafting experience.</p>
-      </article>
-      <article class="grid-item">
-        <img src="images/guide2.jpg" alt="Guide Sarah" />
-        <h3>Sarah Johnson</h3>
-        <p>Safety expert and outdoor educator.</p>
-      </article>
-      <article class="grid-item">
-        <img src="images/guide3.jpg" alt="Guide Alex" />
-        <h3>Alex Brown</h3>
-        <p>Adventure photographer and Class V rafting specialist.</p>
-      </article>
-    </div>
+      <div class="guide">
+        <h3>Sarah</h3>
+        <picture>
+          <source srcset="images/sarah.webp" type="image/webp">
+          <img src="images/sarah.webp" alt="Guide Sarah">
+        </picture>
+        <p>Sarah is an expert in tackling challenging rapids and has a gift for making adventure accessible to everyone. Her energy and enthusiasm inspire confidence in both first-time rafters and seasoned paddlers.</p>
+      </div>
+
+      <div class="guide">
+        <h3>Alex</h3>
+        <picture>
+          <source srcset="images/alex.webp" type="image/webp">
+          <img src="images/alex.webp" alt="Guide Alex">
+        </picture>
+        <p>Alex’s outgoing personality and years of rafting expertise create a fun and exciting atmosphere on every trip. His commitment to safety and teamwork ensures that every adventure is unforgettable.</p>
+      </div>
+    </section>
   </main>
 
-  <!-- Newsletter -->
-  <section class="newsletter" id="newsletter">
-    <h2>Join Our Newsletter</h2>
-    <form class="newsletter-form" action="#" method="post" novalidate>
-      <div class="field">
-        <label for="fullname">Full name</label>
-        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required autocomplete="name" />
-      </div>
-
-      <div class="field">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="email" />
-      </div>
-
-      <button type="submit" class="btn-primary">Sign Me Up</button>
-    </form>
-  </section>
-
   <footer>
-    <p>&copy; <span id="year"></span> White Water Rafting Co. — All rights reserved.</p>
+    <p>&copy; 2025 White Water Rafting Co. | All Rights Reserved</p>
     <div class="social">
-      <a href="https://facebook.com" aria-label="Facebook">
-        <img src="images/facebook.png" alt="Facebook icon" />
-      </a>
-      <a href="https://instagram.com" aria-label="Instagram">
-        <img src="images/instagram.jpeg" alt="Instagram icon" />
-      </a>
+      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="images/instagram.jpeg" alt="Instagram"></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
     </div>
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
+

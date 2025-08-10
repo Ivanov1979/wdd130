@@ -3,16 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Explore rafting trips, pricing, and difficulty levels." />
+  <meta name="description" content="Explore our rafting trips, prices, and difficulty levels." />
   <meta name="author" content="Iván Sanhueza" />
   <title>Trips - White Water Rafting Co.</title>
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
-
-  <!-- Site CSS -->
   <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 <body>
@@ -21,82 +15,53 @@
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="trips.html">Trips</a></li>
+        <li><a class="active" href="trips.html">Trips</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero -->
   <section class="hero">
-    <img class="hero-img" src="images/hero.jpg" alt="River canyon with rafting boats" />
-    <div class="hero-overlay">
+    <img src="images/hero.jpg" alt="Rafting on a scenic river" />
+    <div>
       <h2>Pick Your Adventure</h2>
-      <a class="btn" href="#trip-list">View Trips</a>
+      <a href="#trips">View Trips</a>
     </div>
   </section>
 
-  <!-- Trips Grid -->
-  <main class="grid-content" id="trip-list">
-    <h2>Our Most Popular Trips</h2>
-    <div class="grid-layout">
-      <article class="grid-item">
-        <img src="images/rafting26_600.jpg" alt="Beginner rafting group on calm water" />
-        <h3>Thunder Creek — Beginner</h3>
-        <p>Perfect for first-timers and families. Class II–III rapids, scenic bends, full safety briefing.</p>
-        <p><strong>Duration:</strong> 3 hours &nbsp;|&nbsp; <strong>Price:</strong> $59</p>
-      </article>
+  <main id="trips">
+    <h2>Popular Trips</h2>
+    <article>
+      <img src="images/rafting26_600.jpg" alt="Beginner rafting trip" />
+      <h3>Thunder Creek — Beginner</h3>
+      <p>Gentle Class II–III rapids, scenic views, safety briefing.</p>
+      <p>3 hours — $59</p>
+    </article>
 
-      <article class="grid-item">
-        <img src="images/rafting47_600.jpg" alt="Intermediate rafting through splashy rapids" />
-        <h3>Silver Rapids — Intermediate</h3>
-        <p>A great balance of fun and challenge. Class III–IV rapids, expert guides, photo stop included.</p>
-        <p><strong>Duration:</strong> 5 hours &nbsp;|&nbsp; <strong>Price:</strong> $89</p>
-      </article>
+    <article>
+      <img src="images/rafting47_600.jpg" alt="Intermediate rafting trip" />
+      <h3>Silver Rapids — Intermediate</h3>
+      <p>Class III–IV rapids, expert guides, photo stop.</p>
+      <p>5 hours — $89</p>
+    </article>
 
-      <article class="grid-item">
-        <img src="images/rafting49_600.jpg" alt="Advanced rafting boat in big whitewater" />
-        <h3>Devil’s Run — Advanced</h3>
-        <p>For thrill-seekers only. Continuous Class IV sections, technical maneuvers, high-adrenaline drops.</p>
-        <p><strong>Duration:</strong> 6 hours &nbsp;|&nbsp; <strong>Price:</strong> $119</p>
-      </article>
-    </div>
+    <article>
+      <img src="images/rafting49_600.jpg" alt="Advanced rafting trip" />
+      <h3>Devil’s Run — Advanced</h3>
+      <p>Continuous Class IV rapids, technical maneuvers, big drops.</p>
+      <p>6 hours — $119</p>
+    </article>
   </main>
 
-  <!-- Newsletter (standardized) -->
-  <section class="newsletter" id="newsletter">
-    <h2>Join Our Newsletter</h2>
-    <form class="newsletter-form" action="#" method="post" novalidate>
-      <div class="field">
-        <label for="fullname">Full name</label>
-        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required autocomplete="name" />
-      </div>
-
-      <div class="field">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="email" />
-      </div>
-
-      <button type="submit" class="btn-primary">Sign Me Up</button>
-    </form>
-  </section>
-
   <footer>
-    <p>&copy; <span id="year"></span> White Water Rafting Co. — All rights reserved.</p>
-    <div class="social">
-      <a href="https://facebook.com" aria-label="Facebook">
-        <img src="images/facebook.png" alt="Facebook icon" />
-      </a>
-      <a href="https://instagram.com" aria-label="Instagram">
-        <img src="images/instagram.jpeg" alt="Instagram icon" />
-      </a>
-    </div>
+    <p>&copy; <span id="year"></span> White Water Rafting Co.</p>
   </footer>
 
   <script>
-    // small helper for current year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
+
+
