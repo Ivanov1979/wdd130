@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Explore our rafting trips — from family floats to advanced rapids. Book your next adventure." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore our rafting trips — from family floats to advanced rapids. Book your next adventure.">
   <title>Trips | White Water Rafting Co.</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/rafting.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="White Water Rafting Logo" class="logo" />
+    <img src="images/logo.png" alt="White Water Rafting Logo" class="logo">
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -27,15 +28,16 @@
     <h1>Choose Your Adventure</h1>
     <p>Browse our most popular trips below. Not sure which to pick? We’re happy to help you find the perfect fit.</p>
 
-    <!-- CTA to Contact -->
     <p style="margin:16px 0;">
       <a href="contact.html" class="btn btn-primary">Book Your Trip</a>
     </p>
 
-    <!-- Trip cards (≥ 3) -->
-    <section class="trips-list grid cols-3">
+    <!-- Trips list -->
+    <section class="trips-list grid cols-3" aria-labelledby="trips-heading">
+      <h2 id="trips-heading" style="grid-column:1/-1">Our Trips</h2>
+
       <article class="card">
-        <img src="images/rafting26_600.jpg" alt="Devil Runs rapid" loading="lazy" />
+        <img src="images/rafting26_600.jpg" alt="Devil Runs rapid" loading="lazy">
         <div class="card-body">
           <h3>Devil Runs</h3>
           <p>Advanced Class IV–V rapids for experienced paddlers seeking maximum thrills.</p>
@@ -43,7 +45,7 @@
       </article>
 
       <article class="card">
-        <img src="images/rafting56_600.jpg" alt="Family float on a calm river" loading="lazy" />
+        <img src="images/rafting56_600.jpg" alt="Family float on a calm river" loading="lazy">
         <div class="card-body">
           <h3>Family Float</h3>
           <p>Gentle Class II–III float suitable for families and first-timers.</p>
@@ -51,31 +53,49 @@
       </article>
 
       <article class="card">
-        <img src="images/rafting58_600.jpg" alt="Sunset canyon run" loading="lazy" />
+        <img src="images/rafting58_600.jpg" alt="Sunset canyon run with golden-hour views" loading="lazy">
         <div class="card-body">
           <h3>Sunset Canyon</h3>
-          <p>Scenic evening trip with moderate Class III rapids and golden-hour views.</p>
+          <p>Scenic evening trip with moderate Class III rapids and stunning canyon scenery.</p>
         </div>
       </article>
     </section>
 
-    <!-- Trip summary table -->
-    <section style="margin-top:24px;">
+    <!-- Summary table -->
+    <section aria-labelledby="summary-heading" style="margin-top:24px;">
+      <h2 id="summary-heading">Trip Summary</h2>
       <table class="trip-summary">
-        <caption>Trip Summary</caption>
         <thead>
           <tr>
-            <th>Trip</th>
-            <th>Difficulty</th>
-            <th>Length</th>
-            <th>Season</th>
-            <th>Price</th>
+            <th scope="col">Trip</th>
+            <th scope="col">Difficulty</th>
+            <th scope="col">Length</th>
+            <th scope="col">Season</th>
+            <th scope="col">Price</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>Devil Runs</td><td>Class IV–V</td><td>6 hrs</td><td>Apr–Oct</td><td>$180</td></tr>
-          <tr><td>Family Float</td><td>Class II–III</td><td>3 hrs</td><td>May–Sep</td><td>$95</td></tr>
-          <tr><td>Sunset Canyon</td><td>Class III</td><td>4 hrs</td><td>Year-round</td><td>$130</td></tr>
+          <tr>
+            <td>Devil Runs</td>
+            <td>Class IV–V</td>
+            <td>6 hrs</td>
+            <td>Apr–Oct</td>
+            <td>$180</td>
+          </tr>
+          <tr>
+            <td>Family Float</td>
+            <td>Class II–III</td>
+            <td>3 hrs</td>
+            <td>May–Sep</td>
+            <td>$95</td>
+          </tr>
+          <tr>
+            <td>Sunset Canyon</td>
+            <td>Class III</td>
+            <td>4 hrs</td>
+            <td>Year-round</td>
+            <td>$130</td>
+          </tr>
         </tbody>
       </table>
     </section>
@@ -84,10 +104,11 @@
   <footer>
     <p>&copy; 2025 White Water Rafting Co. | All Rights Reserved</p>
     <div class="social">
-      <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook" /></a>
-      <a href="#" aria-label="Instagram"><img src="images/instagram.jpeg" alt="Instagram" /></a>
-      <a href="#" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter" /></a>
+      <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="#" aria-label="Instagram"><img src="images/instagram.jpeg" alt="Instagram"></a>
+      <a href="#" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter"></a>
     </div>
   </footer>
 </body>
 </html>
+
