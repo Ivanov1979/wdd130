@@ -3,82 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Explore our rafting trips, prices, and difficulty levels." />
-  <meta name="author" content="Iván Sanhueza" />
+  <meta name="description" content="Explore our rafting trips — from family floats to advanced rapids. Book your next adventure." />
   <title>Trips | White Water Rafting Co.</title>
-
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 <body>
   <header>
-    <img src="images/logo.jpg" alt="White Water Rafting Logo" class="logo" />
+    <img src="images/logo.png" alt="White Water Rafting Logo" class="logo" />
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="trips.html">Trips</a></li>
+        <li><a href="trips.html" class="active">Trips</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero" style="position: relative;">
-    <img src="images/hero.jpg" alt="Rafting on a scenic river" class="hero-img" />
-    <div class="hero-overlay" style="position: absolute; bottom: 10%; left: 5%; background: rgba(14, 16, 61, 0.7); padding: 20px; border-radius: 12px; max-width: 90%;">
-      <h2>Pick Your Adventure</h2>
-      <a href="#trips" class="btn btn-primary">View Trips</a>
-    </div>
-  </section>
+  <main class="container">
+    <h1>Choose Your Adventure</h1>
+    <p>Browse our most popular trips below. Not sure which to pick? We’re happy to help you find the perfect fit.</p>
 
-  <main id="trips" class="container" style="padding: 40px 0;">
-    <h2>Popular Trips</h2>
+    <!-- CTA to Contact -->
+    <p style="margin:16px 0;">
+      <a href="contact.html" class="btn btn-primary">Book Your Trip</a>
+    </p>
 
-    <article class="card" style="margin-bottom: 24px;">
-      <img src="images/rafting26_600.jpg" alt="Beginner rafting trip" />
-      <div class="card-body">
-        <h3>Thunder Creek — Beginner</h3>
-        <p>Gentle Class II–III rapids, scenic views, safety briefing.</p>
-        <p><strong>3 hours — $59</strong></p>
-      </div>
-    </article>
+    <!-- Trip cards (≥ 3) -->
+    <section class="trips-list grid cols-3">
+      <article class="card">
+        <img src="images/rafting26_600.jpg" alt="Devil Runs rapid" loading="lazy" />
+        <div class="card-body">
+          <h3>Devil Runs</h3>
+          <p>Advanced Class IV–V rapids for experienced paddlers seeking maximum thrills.</p>
+        </div>
+      </article>
 
-    <article class="card" style="margin-bottom: 24px;">
-      <img src="images/rafting47_600.jpg" alt="Intermediate rafting trip" />
-      <div class="card-body">
-        <h3>Silver Rapids — Intermediate</h3>
-        <p>Class III–IV rapids, expert guides, photo stop.</p>
-        <p><strong>5 hours — $89</strong></p>
-      </div>
-    </article>
+      <article class="card">
+        <img src="images/rafting56_600.jpg" alt="Family float on a calm river" loading="lazy" />
+        <div class="card-body">
+          <h3>Family Float</h3>
+          <p>Gentle Class II–III float suitable for families and first-timers.</p>
+        </div>
+      </article>
 
-    <article class="card" style="margin-bottom: 24px;">
-      <img src="images/rafting49_600.jpg" alt="Advanced rafting trip" />
-      <div class="card-body">
-        <h3>Devil’s Run — Advanced</h3>
-        <p>Continuous Class IV rapids, technical maneuvers, big drops.</p>
-        <p><strong>6 hours — $119</strong></p>
-      </div>
-    </article>
+      <article class="card">
+        <img src="images/rafting58_600.jpg" alt="Sunset canyon run" loading="lazy" />
+        <div class="card-body">
+          <h3>Sunset Canyon</h3>
+          <p>Scenic evening trip with moderate Class III rapids and golden-hour views.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Trip summary table -->
+    <section style="margin-top:24px;">
+      <table class="trip-summary">
+        <caption>Trip Summary</caption>
+        <thead>
+          <tr>
+            <th>Trip</th>
+            <th>Difficulty</th>
+            <th>Length</th>
+            <th>Season</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Devil Runs</td><td>Class IV–V</td><td>6 hrs</td><td>Apr–Oct</td><td>$180</td></tr>
+          <tr><td>Family Float</td><td>Class II–III</td><td>3 hrs</td><td>May–Sep</td><td>$95</td></tr>
+          <tr><td>Sunset Canyon</td><td>Class III</td><td>4 hrs</td><td>Year-round</td><td>$130</td></tr>
+        </tbody>
+      </table>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> White Water Rafting Co. | All Rights Reserved</p>
+    <p>&copy; 2025 White Water Rafting Co. | All Rights Reserved</p>
     <div class="social">
       <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook" /></a>
       <a href="#" aria-label="Instagram"><img src="images/instagram.jpeg" alt="Instagram" /></a>
       <a href="#" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter" /></a>
     </div>
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
-
-

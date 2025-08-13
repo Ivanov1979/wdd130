@@ -3,20 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Welcome to White Water Rafting Co. Experience thrilling river adventures and unforgettable memories." />
+  <meta name="description" content="White Water Rafting Co. — thrilling river adventures, family floats, and expert-guided trips." />
   <title>Home | White Water Rafting Co.</title>
-
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet" />
-
-  <!-- Shared CSS -->
   <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 <body>
   <header>
-    <img src="images/logo.jpg" alt="White Water Rafting Logo" class="logo" />
+    <img src="images/logo.png" alt="White Water Rafting Logo" class="logo" />
     <nav>
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
@@ -28,53 +24,49 @@
   </header>
 
   <main>
-    <!-- Hero Section -->
-    <section class="hero" style="position: relative;">
-      <img src="images/hero-river.jpg" alt="White water rafting adventure" class="hero-img" />
-      <div class="hero-overlay" style="position: absolute; bottom: 10%; left: 5%; background: rgba(14, 16, 61, 0.7); padding: 20px; border-radius: 12px; max-width: 90%;">
-        <h1>Experience the Thrill of White Water Rafting</h1>
-        <a href="trips.html" class="btn btn-primary">Explore Our Trips</a>
+    <!-- Hero -->
+    <section class="hero">
+      <img class="hero-img" src="images/rafting58_600.jpg" alt="Rafting boat charging down a rapid" />
+      <div class="hero-overlay">
+        <h1>Find Your Next Rapid</h1>
+        <p>Safe, unforgettable white water experiences led by expert guides.</p>
+        <a href="trips.html" class="btn btn-primary">View Trips</a>
       </div>
     </section>
 
-    <!-- Newsletter Signup -->
-    <section class="newsletter" style="padding: 40px 16px; background: var(--surface); text-align: center;">
+    <!-- Grid content (purpose & offerings) -->
+    <section class="container grid cols-2" style="margin-top:24px;">
+      <article class="card">
+        <img src="images/rafting4_600.jpg" alt="Guides navigating a rapid" loading="lazy" />
+        <div class="card-body">
+          <h3>Our Purpose</h3>
+          <p>We connect people with nature through safe, exciting river adventures that build confidence and memories.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="images/rafting49_600.jpg" alt="Raft crew paddling through a canyon" loading="lazy" />
+        <div class="card-body">
+          <h3>What We Offer</h3>
+          <p>Beginner floats, adrenaline runs, and custom group trips — all with pro gear and certified guides.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="container contact-section">
       <h2>Join Our Newsletter</h2>
-      <p>Stay updated with upcoming trips, special offers, and rafting tips.</p>
-      <form action="#" method="post" style="max-width: 500px; margin: 0 auto; text-align: left;">
+      <form action="#">
         <div class="field">
-          <label for="newsletter-name">Name</label>
-          <input type="text" id="newsletter-name" name="newsletter-name" required placeholder="Your name" />
+          <label for="nl-name">Full name</label>
+          <input id="nl-name" name="name" type="text" placeholder="Enter your full name" required />
         </div>
         <div class="field">
-          <label for="newsletter-email">Email</label>
-          <input type="email" id="newsletter-email" name="newsletter-email" required placeholder="Your email" />
+          <label for="nl-email">Email</label>
+          <input id="nl-email" name="email" type="email" placeholder="Enter your email" required />
         </div>
-        <button type="submit" class="btn btn-primary">Sign Up</button>
+        <button type="submit" class="btn">Sign Me Up</button>
       </form>
-    </section>
-
-    <!-- Grid Content Section -->
-    <section class="grid cols-2" style="padding: 40px 16px; max-width: var(--maxw); margin: 0 auto; gap: 32px;">
-      <div class="card">
-        <img src="images/purpose.jpg" alt="Our Mission" />
-        <div class="card-body">
-          <h2>Our Purpose</h2>
-          <p>
-            We are dedicated to providing exciting and safe river rafting adventures that connect you with nature, challenge your limits, and create lifelong memories.
-          </p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="images/offerings.jpg" alt="Rafting Offerings" />
-        <div class="card-body">
-          <h2>What We Offer</h2>
-          <p>
-            From beginner-friendly floats to expert-level rapids, our diverse trips suit all skill levels, backed by experienced guides and top-quality equipment.
-          </p>
-        </div>
-      </div>
     </section>
   </main>
 
