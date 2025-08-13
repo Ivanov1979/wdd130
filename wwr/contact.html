@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Contact White Water Rafting Co." />
-  <meta name="author" content="Iván Sanhueza" />
-  <title>Contact - White Water Rafting Co.</title>
+  <meta name="description" content="Contact White Water Rafting Co. for bookings and questions." />
+  <title>Contact Us | White Water Rafting Co.</title>
 
-  <!-- Fonts -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet" />
 
-  <!-- CSS -->
+  <!-- External CSS -->
   <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 <body>
@@ -28,68 +27,36 @@
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <img class="hero-img" src="images/hero.jpg" alt="Rafting adventure" />
-    <div class="hero-overlay">
-      <h2>Contact Us</h2>
-    </div>
-  </section>
-
-  <!-- Contact Info and Form -->
-  <main class="grid-content">
-    <h2>Get in Touch</h2>
-    <p>Have a question or want to book a trip? Send us a message and we’ll get back to you soon!</p>
-
-    <form action="#" method="post" class="newsletter-form" novalidate>
-      <div class="field">
-        <label for="name">Full name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your full name" required />
-      </div>
-
-      <div class="field">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required />
-      </div>
-
-      <div class="field">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Write your message..." rows="4" required></textarea>
-      </div>
-
-      <button type="submit" class="btn-primary">Send Message</button>
-    </form>
+  <main class="container">
+    <section class="contact-section">
+      <h1>Contact Us</h1>
+      <p>Have a question or want to book a trip? Send us a message and we’ll get back to you soon!</p>
+      <form action="#" method="post" novalidate>
+        <div class="field">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name" />
+        </div>
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email" />
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Write your message..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </section>
   </main>
 
-  <!-- Newsletter -->
-  <section class="newsletter" id="newsletter">
-    <h2>Join Our Newsletter</h2>
-    <form class="newsletter-form" action="#" method="post" novalidate>
-      <div class="field">
-        <label for="fullname">Full name</label>
-        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required />
-      </div>
-
-      <div class="field">
-        <label for="email-news">Email</label>
-        <input type="email" id="email-news" name="email" placeholder="Enter your email" required />
-      </div>
-
-      <button type="submit" class="btn-primary">Sign Me Up</button>
-    </form>
-  </section>
-
   <footer>
-    <p>&copy; <span id="year"></span> White Water Rafting Co. — All rights reserved.</p>
+    <p>&copy; 2025 White Water Rafting Co. | All Rights Reserved</p>
     <div class="social">
-      <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook" /></a>
-      <a href="https://instagram.com"><img src="images/instagram.jpeg" alt="Instagram" /></a>
+      <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook" /></a>
+      <a href="#" aria-label="Instagram"><img src="images/instagram.jpeg" alt="Instagram" /></a>
+      <a href="#" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter" /></a>
     </div>
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
 

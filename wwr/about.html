@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Learn more about our rafting company, our mission, and our dedicated team of professional guides.">
-  <meta name="author" content="Iván Sanhueza">
-  <title>About Us - White Water Rafting Co.</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Learn more about our rafting company, our mission, and our professional guides." />
+  <meta name="author" content="Iván Sanhueza" />
+  <title>About Us | White Water Rafting Co.</title>
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet" />
 
-  <!-- External CSS -->
-  <link rel="stylesheet" href="styles/rafting.css">
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 <body>
+  <!-- Header -->
   <header>
-    <img src="images/logo.jpg" alt="White Water Rafting Logo" class="logo">
+    <img src="images/logo.png" alt="White Water Rafting Logo" class="logo" />
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -28,53 +29,98 @@
     </nav>
   </header>
 
-  <main>
+  <!-- Main -->
+  <main class="container">
+
+    <!-- Company Intro -->
     <section class="company-info">
       <h1>About Our Company</h1>
-      <p>At White Water Rafting Co., we’ve been guiding thrilling river adventures for more than 15 years. Our mission is simple: to create unforgettable outdoor experiences while ensuring safety, respecting nature, and building lasting memories for every guest.</p>
-      <p>From gentle family-friendly floats to adrenaline-pumping Class V rapids, we offer something for everyone. Our team is committed to excellence in training, customer service, and environmental stewardship.</p>
+      <p>
+        At White Water Rafting Co., we’ve been guiding thrilling river adventures for more than 15 years. Our mission is simple: to create unforgettable outdoor experiences while ensuring safety, respecting nature, and building lasting memories for every guest.
+      </p>
+      <p>
+        From gentle family-friendly floats to adrenaline-pumping Class V rapids, we offer something for everyone. Our team is committed to excellence in training, customer service, and environmental stewardship.
+      </p>
     </section>
 
+    <!-- Two feature cards -->
+    <section class="grid cols-2">
+      <!-- Card 1 -->
+      <article class="card">
+        <img src="images/rafting4_600.jpg" alt="Guides navigating a rapid" loading="lazy">
+        <div class="card-body">
+          <h3>Our Mission</h3>
+          <p>We provide exciting and safe river rafting adventures that connect you with nature, challenge your limits, and create lifelong memories.</p>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card">
+        <img src="images/rafting49_600.jpg" alt="Raft crew paddling through a canyon" loading="lazy">
+        <div class="card-body">
+          <h3>Rafting Offerings</h3>
+          <p>From beginner-friendly floats to expert-level rapids, our trips suit all skill levels, backed by experienced guides and top-quality equipment.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Guides -->
     <section class="guides">
       <h2>Meet Our Guides</h2>
+      <div class="guides-list">
+        <!-- John -->
+        <div class="guide">
+          <h3>John</h3>
+          <picture>
+            <!-- Keep AVIF as provided -->
+            <source srcset="images/john.avif" type="image/avif" />
+            <img src="images/john.avif" alt="Guide John" loading="lazy" />
+          </picture>
+          <p>
+            John has over 10 years of guiding experience and a deep love for whitewater challenges. Known for his calm demeanor and expert navigation skills, he makes every guest feel safe while having the time of their life.
+          </p>
+        </div>
 
-      <div class="guide">
-        <h3>John</h3>
-        <picture>
-          <source srcset="images/john.avif" type="image/avif">
-          <img src="images/john.avif" alt="Guide John">
-        </picture>
-        <p>John has over 10 years of guiding experience and a deep love for whitewater challenges. Known for his calm demeanor and expert navigation skills, he makes every guest feel safe while having the time of their life.</p>
-      </div>
+        <!-- Sarah -->
+        <div class="guide">
+          <h3>Sarah</h3>
+          <picture>
+            <source srcset="images/sarah.webp" type="image/webp" />
+            <img src="images/sarah.webp" alt="Guide Sarah" loading="lazy" />
+          </picture>
+          <p>
+            Sarah is an expert in tackling challenging rapids and has a gift for making adventure accessible to everyone. Her energy and enthusiasm inspire confidence in both first-time rafters and seasoned paddlers.
+          </p>
+        </div>
 
-      <div class="guide">
-        <h3>Sarah</h3>
-        <picture>
-          <source srcset="images/sarah.webp" type="image/webp">
-          <img src="images/sarah.webp" alt="Guide Sarah">
-        </picture>
-        <p>Sarah is an expert in tackling challenging rapids and has a gift for making adventure accessible to everyone. Her energy and enthusiasm inspire confidence in both first-time rafters and seasoned paddlers.</p>
-      </div>
-
-      <div class="guide">
-        <h3>Alex</h3>
-        <picture>
-          <source srcset="images/alex.webp" type="image/webp">
-          <img src="images/alex.webp" alt="Guide Alex">
-        </picture>
-        <p>Alex’s outgoing personality and years of rafting expertise create a fun and exciting atmosphere on every trip. His commitment to safety and teamwork ensures that every adventure is unforgettable.</p>
+        <!-- Alex -->
+        <div class="guide">
+          <h3>Alex</h3>
+          <picture>
+            <source srcset="images/alex.webp" type="image/webp" />
+            <img src="images/alex.webp" alt="Guide Alex" loading="lazy" />
+          </picture>
+          <p>
+            Alex’s outgoing personality and years of rafting expertise create a fun and exciting atmosphere on every trip. His commitment to safety and teamwork ensures that every adventure is unforgettable.
+          </p>
+        </div>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 White Water Rafting Co. | All Rights Reserved</p>
     <div class="social">
-      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-      <a href="#"><img src="images/instagram.jpeg" alt="Instagram"></a>
-      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+      <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook" /></a>
+      <a href="#" aria-label="Instagram"><img src="images/instagram.jpeg" alt="Instagram" /></a>
+      <a href="#" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter" /></a>
     </div>
   </footer>
 </body>
 </html>
+
+
+
+
 
